@@ -1,0 +1,289 @@
+/*header and topbar css*/
+h1 {
+	color: #ffffff;
+	font-family: 'Trirong', serif;
+	background-color: #4aaaa5;
+	transition: color 2s;
+}
+
+body {
+	background: url(../images/background.png);
+	color: #777777;
+	background-color: #ffffff;
+	font-family: 'Pontano Sans', sans-serif;
+	border-color: #dddddd;
+}
+
+
+header {
+	background-color: #ffffff;
+	border-bottom-color: #cccccc;
+	border-style: solid;
+	border-width: 0px 0px 2px 0px;
+	box-sizing: border-box;
+	height: 75px;
+}
+
+.topbar {
+	width: 100%;
+	max-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/*heading - Ariel M. Costa*/
+.name {
+	background-color: #4aaaa5;
+	border: #cccccc;
+	position: relative;
+	float: left;
+	left: 20px;
+	line-height: 73px;
+	width: 265px;
+	text-align: center;
+}
+
+/*navbar links*/
+.links {
+	position: relative;
+	float: left;
+	top: 32%;
+	left: 40%;
+	width: 28%;
+	min-width: 337px;
+}
+
+/*navbar links*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-right: 77px;
+}
+
+li {
+	display: inline;
+	padding: 5px;
+}
+
+a {
+	text-decoration: none;
+	transition: background-color 1s ease;
+}
+
+a:link {
+	color: #cccccc;
+	
+}
+
+a:visited {
+	color: #4aaaa5;
+}
+
+/*hover color change only for navbar links*/
+.links a:hover {
+	color: #ffffff;
+	background-color: #4aaaa5;
+}
+
+/*hover change only for h1*/
+h1:hover {
+	color: #7f7f7f;
+}
+
+.thumbnail:hover {
+	opacity: 0.5;
+}
+
+.foliolinks:hover {
+	opacity: 0.5;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+a:active {
+	color: #cccccc;
+}
+
+/*main content css*/
+
+h2, h3 {
+	color: #4aaaa5;
+	font-family: 'Trirong', serif;
+}
+
+/*profile picture*/
+.profile {
+	clear: both;
+	float: left;
+	margin: 0px 10px 10px 10px;
+	width: 150px;
+}
+
+/*links to portfolio projects*/
+.foliolinks {
+	display: inline-block;
+	margin: 10px;
+	border: 1px solid #cccccc;
+}
+
+/*placeholder portfolio pictures*/
+.foliopic {
+	width: 268px; 
+	height: 174px
+}
+
+/*portfolio project name*/
+.project {
+	font-family: 'Trirong', serif;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	text-align: center;
+	line-height: 3em;
+	position: relative;
+	bottom: 65px;
+	margin-bottom: -65px;
+}
+
+/*surrounds about me section*/
+.container {
+	background-color: #ffffff;
+	padding: 30px;
+	width: 55%;
+	max-width: 586px;
+	float: left;
+	border: solid 2px #cccccc;
+	margin: 30px 0px 30px 50px;
+}
+
+/*connect with me section*/
+.connect {
+	margin: 30px 0px 30px 60px;
+	width: 34%;
+	float: left;
+	background-color: #ffffff;
+    border: solid 2px #cccccc;
+    padding: 30px;
+    max-width: 171px;
+    text-align: center;
+}
+
+
+
+/*connect with me logo images*/
+.thumbnail {
+	width: 50px; 
+	height: 50px;
+}
+
+
+input:hover {
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #4aaaa5;
+}
+
+textarea:hover {
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #4aaaa5;
+}
+
+/*contact me form*/
+input, textarea {
+	font-family: 'Pontano Sans', sans-serif;
+	color: #4aaaa5;
+	transition: color 1s, background-color 1s;
+}
+
+textarea {
+	min-height: 140px;
+	width: 95%;
+}
+
+/*footer css*/
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+
+/*content div surrounds all content except footer*/
+.content {
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+
+}
+
+/*surrounds both about/contact/portfolio and connect*/
+.wrapper {
+	margin: 0 auto;
+	max-width: 1170px;
+}
+
+.footer {
+	width: 100%;
+	background-color: #666666;
+	color: #ffffff;
+	text-align: center;
+	border-top-style: solid;
+	border-top-width: 7px;
+	border-top-color: #4aaaa5; 
+	clear: both;
+	height: 80px;
+}
+
+.copyright {
+	padding-top: 30px;
+	font-size: .75em;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+@media screen and (max-width: 980px) {
+	.links {
+		right: auto;
+	}
+	.container {
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		height: 150px;
+	}
+	ul {
+		width: 225px;
+	}
+	.links {
+		left: 6%;
+		top: 18%;
+	}
+	.name {
+		left: 11%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+
+	header {
+		position: static;
+	}
+	.foliolink {
+		width: inherit;
+		height: auto;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
