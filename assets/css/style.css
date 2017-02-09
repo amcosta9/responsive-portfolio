@@ -50,14 +50,12 @@ header {
 	top: 32%;
 	left: 40%;
 	width: 28%;
-	min-width: 337px;
 }
 
 /*navbar links*/
 ul {
 	list-style-type: none;
 	margin: 0;
-	padding-right: 77px;
 }
 
 li {
@@ -124,7 +122,6 @@ h2, h3 {
 /*links to portfolio projects*/
 .foliolinks {
 	display: inline-block;
-	margin: 10px;
 	border: 1px solid #cccccc;
 }
 
@@ -246,43 +243,102 @@ html, body {
     padding:0;
 }
 
+
 @media screen and (max-width: 980px) {
 	.links {
-		right: auto;
+		left: 30%;
+		width: initial;
 	}
-	.container {
-		max-width: 500px;
+
+	.foliolinks {
+		width: 100%;
 	}
+	.foliopic {
+		width: 100%;
+		height: auto;
+	}
+	.profile {
+		width: 100%;
+		height: auto;
+	}
+
+
+
 }
 
 @media screen and (max-width: 768px) {
-	header {
-		height: 150px;
-	}
-	ul {
-		width: 225px;
-	}
+
 	.links {
-		left: 6%;
+		left: 15%;
 		top: 18%;
 	}
 	.name {
 		left: 11%;
 	}
+	.profile {
+		width: 200px;
+		height: auto;
+	}
+	.container {
+		width: initial;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.connect {
+		max-width: initial;
+		width: 82%;
+		margin-left: 10px;
+	}
+	.foliolinks {
+		width: 47%;
+		height: auto;
+		margin: 5px;
+	}
+	.project {
+		line-height: 2em;
+	}
+	form {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 640px) {
+	header {
+		height: 150px;
+	}
+	.name {
+		width: 100%;
+		left: 0%;
+	}
+	.links {
+		width: 100%;
+		max-width: inherit;
+		text-align: center;
+		padding: 0px 10px 0px 10px;
+		left: 0%;
+		right: 0%;
+	}
+	li {
+		padding: 10px;
+	}
 
 	header {
 		position: static;
 	}
-	.foliolink {
-		width: inherit;
-		height: auto;
-	}
 
 	img {
 		max-width: 100%;
+		height: auto;
+	}
+	.foliolinks {
+		width: 100%;
+	}
+	.foliopic {
+		width: 100%;
+		height: auto;
+	}
+	.profile {
+		width: 100%;
 		height: auto;
 	}
 }
